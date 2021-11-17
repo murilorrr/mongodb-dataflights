@@ -8,7 +8,7 @@ db.resumoVoos.insertOne({ empresa: latan, totalVoosDomesticos });
 
 db.resumoVoos.find(
   {
-    "empresa.nome": latan,
+    empresa: latan,
   },
   { empresa: 1, totalVoosDomesticos: 1, _id: 0 },
 );
